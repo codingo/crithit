@@ -1,0 +1,3 @@
+/opt/codingo/crithit/crithit/CMakeFiles/rebuild_cache.dir
+/opt/codingo/crithit/crithit/CMakeFiles/crithit.dir
+/opt/codingo/crithit/crithit/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++17 -O3 -O3 -DNDEBUG  -rdynamic CMakeFiles/crithit.dir/crithit.cpp.o CMakeFiles/crithit.dir/https_socket.cpp.o CMakeFiles/crithit.dir/request.cpp.o CMakeFiles/crithit.dir/utils.cpp.o  -o crithit -lpthread -lssl -lcrypto 
