@@ -5,7 +5,7 @@ Directory and file brute forcing at extreme scale.
 
 CritHit takes a single wordlist item and tests it one by one over a large collection of hosts before moving onto the next wordlist item. The intention of brute foricng in this manner is to avoid low limit Web Application Firewall (WAF) bans and to allow brute forcing to run faster than it normally would when approaching any single host with multiple simultaneous requests.
 
-CritHit can perform multiple verifications of results using proxy lists, as well as filter out noise by base lining websites. Additionally, if looking for a specific item over a large number of websites (to cross compare a vulnerablity over more hosts) you can build and use `--signatures` to write only hosts containing specific data points to an output file. Reviewing input parameters is recommended until proper documentation has been added to this repository. 
+CritHit can perform multiple verifications of results using proxy lists, as well as filter out noise by base lining websites. Additionally, if looking for a specific item over a large number of websites (to cross compare a vulnerablity over more hosts) you can build and use `--signatures` to write only hosts containing specific data points to an output file.
 
 Best results can be sought from CritHit by using it as a quick "first pass" with a smaller (100 critical items) wordlist, a very large target list, and then deep diving more directly with a project such as [ffuf](https://github.com/ffuf/ffuf) where results are found.
 
@@ -15,7 +15,7 @@ Inspired by EdOverflows [Megplus](https://github.com/EdOverflow/megplus) and Tom
 Also thank-you to [Hakluke](https://github.com/hakluke) and [sml555_](https://github.com/prodigysml) for refining upont the core idea, encouragement, and testing.
 
 ## Warning
-This runs insanely fast. If you work over a target with a shared waf over domains you will quickly face a ban. Tweak `-n` (timeout) and `-c` (threads) as needed.
+This runs insanely fast using default settings. If you work over a target with a shared waf over domains you will quickly face a ban. Tweak `-n` (timeout) and `-c` (threads) as needed.
 
 ## Installation
 Install dependancies:
@@ -50,6 +50,8 @@ make
 ./crithit -w _wordlist_ -t _hostnames_
 ```
 # Usage
+
+Reviewing input parameters is recommended until proper documentation has been added to this repository. 
 
 ```
 USAGE:
