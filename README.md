@@ -3,7 +3,7 @@ Directory and file brute forcing at extreme scale.
 
  [![License](https://img.shields.io/badge/license-GPL3-_red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) [![Twitter](https://img.shields.io/badge/twitter-@codingo__-blue.svg)](https://twitter.com/codingo_)
 
-CritHit takes a single wordlist item and test it one by one over a large collection of hosts before moving onto the next wordlist item. The intention of brute foricng in this manner is to avoid low limit Web Application Firewall (WAF) bans and to allow brute forcing to run faster than it normally would when approaching one host.
+CritHit takes a single wordlist item and tests it one by one over a large collection of hosts before moving onto the next wordlist item. The intention of brute foricng in this manner is to avoid low limit Web Application Firewall (WAF) bans and to allow brute forcing to run faster than it normally would when approaching any single host with multiple simultaneous requests.
 
 Best results can be sought from CritHit by using it as a quick "first pass" with a smaller (100 critical items) wordlist, a very large target list, and then deep diving more directly with a project such as [ffuf](https://github.com/ffuf/ffuf) where results are found.
 
