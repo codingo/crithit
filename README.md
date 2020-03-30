@@ -54,7 +54,7 @@ make
 ```bash
 cd crithit/crithit
 docker build -t crithit .
-docker run -t crithit -w  _wordlist_ -t _hostnames_
+docker run -v $(pwd):/input -t crithit -w  /input/_wordlist_ -t /input/_hostnames_
 ```
 
 # Usage
