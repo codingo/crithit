@@ -22,6 +22,7 @@ Install dependancies:
 
 - Firstly, Download Boost 1.70 from https://www.boost.org/users/history/version_1_70_0.html and extract the library into any directory. A Unix build of Boost is located in `/dep/` of this repository, this will need to be replaced to build for other environments.
 - Set the environment variable  `BOOST_ROOT` to the root of the extracted library.
+- If you happen to use LibreSSL instead of OpenSSL. You need to have `libcrypto.so.1.1` and `libssl.so.1.1` on your `/usr/lib` directory which is included on `dep/` directory on this repo. 
 
 Then: 
 ```
