@@ -49,6 +49,14 @@ cmake -G "Unix Makefiles"
 make
 ./crithit -w _wordlist_ -t _hostnames_
 ```
+## Docker
+
+```bash
+cd crithit/crithit
+docker build -t crithit .
+docker run -t crithit -w  _wordlist_ -t _hostnames_
+```
+
 # Usage
 
 Reviewing input parameters is recommended until proper documentation has been added to this repository. 
@@ -128,5 +136,5 @@ Where:
 
    -h,  --help
      Displays usage information and exits.
-  ```
+```
 
